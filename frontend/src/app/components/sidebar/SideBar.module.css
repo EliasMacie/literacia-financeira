@@ -1,0 +1,16 @@
+.sideBarHeader{
+    display: flex;
+    width: 14.25rem;
+    flex: 0 0 5.3125rem;
+    align-items: center;
+    padding: 0.625rem 0.625rem 0.625rem 0.9375rem;
+    /* gap: 6rem; */
+    justify-content: space-between;
+}
+.sideBarBody{
+    width: 14.25rem;
+    flex: 0 0 auto;
+}
+.sideBarFooter{
+
+}

@@ -1,0 +1,38 @@
+.navList{
+    display: flex;
+    flex-direction: column;
+    padding:  0.625rem 0rem;
+    list-style: none;
+    gap: 0.3125rem;
+}
+
+.navItem{
+    display: flex;
+    height: 3.125rem;
+    width: 14.25rem;
+    align-items: center;
+    padding: 0.625rem 0.9375rem;
+}
+
+.navItem:hover{
+    background-color: #DAD7CD;
+}
+
+.navLink{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 0.9375rem;
+    color: #344E41;
+}
+
+.icone{
+    font-size: 1.5rem;
+    color: #344E41;
+}
+
+.ativo{
+    background-color: #DAD7CD;
+    border-right: 0.3125rem solid #344E41;
+    font-weight: 600;
+}

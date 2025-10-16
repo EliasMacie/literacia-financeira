@@ -1,0 +1,44 @@
+/* layout.module.css */
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%; /* <-- aqui */
+}
+
+.sidebar {
+  width: 15.625rem;
+  display: flex;
+  border-right: 2px solid #DAD7CD;
+  flex-direction: column;
+  height: 100%;
+  padding: 0.625rem 0.6875rem;
+  gap: 1.5625rem;
+}
+
+/* impede rolagem global */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.mainContent{
+  background-color: #DAD7CD;
+  flex: 1 1 auto;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+
+}
+
+.header{
+  display: flex;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 1.25rem;
+}
