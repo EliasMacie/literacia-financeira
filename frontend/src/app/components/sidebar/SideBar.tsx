@@ -2,12 +2,17 @@ import styles from './SideBar.module.css'
 import SideBarBody from './components/sideBarBody/SideBarBody'
 import SideBarHeader from './components/sideBarHeader/SideBarHeader'
 
-export default function SideBar() {
+type Props = {
+    estadoBar: boolean;
+    onBar: (estado: boolean) => void;
+}
+
+export default function SideBar({onBar, estadoBar}: Props) {
 
     return (
         <>
             <div className={styles.sideBarHeader}>
-                <SideBarHeader/>
+                <SideBarHeader onBar={onBar} estadoBar={estadoBar}/>
             </div>
 
             <nav className={styles.sideBarBody}>

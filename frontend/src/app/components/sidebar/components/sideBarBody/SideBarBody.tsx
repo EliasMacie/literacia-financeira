@@ -11,16 +11,16 @@ export default function SideBarBody(){
     return(
         <ul className={styles.navList}>
             <li className={`${styles.navItem} ${styles.icone} ${ativo == "home"? styles.ativo : ""} `} onClick={() => setAtivo("home")}>
-                <Link href={"../../courses/"} className={styles.navLink} ><i className={`bi bi-house-fill ${styles.icone}`} ></i><span>Home</span></Link>
+                <Link href={"./"} className={styles.navLink} ><i className={`bi bi-house-fill ${styles.icone}`} ></i><span>Home</span></Link>
             </li>
             <li className={`${styles.navItem} ${ativo == "course"? styles.ativo : ""}`} onClick={() => setAtivo("course")}>
-                <Link href={"./"} className={styles.navLink} ><i className={`bi bi-journal-bookmark-fill ${styles.icone}`}></i><span>Course</span></Link>
+                <Link href={"./courses"}  className={styles.navLink} ><i className={`bi bi-journal-bookmark-fill ${styles.icone}`}></i><span>Course</span></Link>
             </li>
             <li className={`${styles.navItem} ${ativo == "dashboard"? styles.ativo : ""}`} onClick={() => setAtivo("dashboard")}>
-                <Link href={"./"} className={styles.navLink} ><i className={`bi bi-speedometer2 ${styles.icone}`}></i><span>Dashboard</span></Link>
+                <Link href={"./dashboard"} className={styles.navLink} ><i className={`bi bi-speedometer2 ${styles.icone}`}></i><span>Dashboard</span></Link>
             </li>
             <li className={`${styles.navItem} ${styles.icone} ${ativo == "support"? styles.ativo : ""}`} onClick={() => setAtivo("support")}>
-                <Link href={"./"} className={styles.navLink} ><i className={`bi bi-headset ${styles.icone}`}></i>Support</Link>
+                <Link href={"./support"} className={styles.navLink} ><i className={`bi bi-headset ${styles.icone}`}></i>Support</Link>
             </li>
         </ul>
     )

@@ -16,3 +16,12 @@
     justify-content: space-between;
     width: 10rem;
 }
+
+.icone1{
+    font-size: 2rem;
+    color: #344E41;
+}
+
+.hide{
+    visibility: hidden
+}

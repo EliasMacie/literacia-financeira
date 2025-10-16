@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import styles from "./layout.module.css";
-import SideBar from "./components/sidebar/SideBar";
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Header from "./components/header/Header";
+import LayoutClient from "./LayoutClient"; // componente cliente
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,25 +11,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <head>
-      </head>
       <body>
-        <div className={styles.container}>
-          <div className={styles.sidebar}>
-            <SideBar/>
-          </div>
-          <div className={styles.content}>
-            <div className={styles.header}>
-              <Header/>
-            </div>
-            <div className={styles.mainContent}>{children}</div>
-          </div>
-        </div>
+        <LayoutClient>{children}</LayoutClient>
       </body>
     </html>
   );
