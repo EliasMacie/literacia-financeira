@@ -1,0 +1,99 @@
+.conteiner{
+    display: flex; 
+    justify-content: center;
+    height: 100vh; 
+    align-items: center; 
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    /* border: 1px solid black; */
+    gap: 10px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    /* background-color: gray; */
+    font-size: 48px;
+    color: #344E41;
+}
+
+.inputGroup{
+    display: flex;
+    width: 100%;
+    /* height: 80px; */
+    flex-direction: column;
+    /* background-color: blue; */
+    gap: 5px;
+}
+
+.submit{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    /* background-color: red; */
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background-color: #344E41;
+    color: #DAD7CD;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #588157;
+    background-color: #DAD7CD; 
+    border: none;
+    font-size: 16px;
+}
+
+
+.register{
+    display: flex;
+    width: 100%;
+    /* background-color: yellow; */
+    color: #344E41;
+    font-size: 16px;
+}
+
+.rememberSenha{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+    /* background-color: green; */
+    color: #344E41;
+}
+
+.label{
+    font-size: 20px;
+    height: 25px;
+    color: #344E41;
+    /* background-color: palevioletred; */
+}
+
+.link{
+    color: #588157;
+    text-decoration: none;
+}
+
+
+/*
+DAD7CD
+A3B18A
+588157
+3A5A40
+344E41
